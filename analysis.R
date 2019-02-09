@@ -1,11 +1,15 @@
 # Analysis script: compute values and create graphics of interest
 library("dplyr")
 library("ggplot2")
+install.packages("ggplot2")
 library("lubridate")
+install.packages("lubridate")
 library("tidyr")
 library("ggmap")
+install.packages("ggmap")
 
 # Load in your data
+evictions <- read.csv("data/Eviction_Notices.csv", stringsAsFactors = F)
 
 # Compute some values of interest and store them in variables for the report
 
